@@ -24,6 +24,12 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+.container {
+    max-width: 100% !important;
+    width: 100%;
+}
+}
 @media (min-width: 960px) {
   .container {
     max-width: 100% !important;
@@ -44,7 +50,7 @@ body {
 
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 0px solid #e5e5e5;
 }
 .jumbotron h2 {
   font-size: 65px;
@@ -114,9 +120,10 @@ body {
 }
 
 #header-global .header-main nav{
-    padding-left: 20%;
-    padding-top: 3.4%;
+    padding-left: 250px;
+    padding-top: 45px;
     position: absolute;
+    width:565px;
     z-index: 1000;
 }
 
@@ -129,6 +136,9 @@ body {
 }
 #header-global .header-main nav a:hover {
     color: #000;
+}
+#header-global .header-main nav>li+li {
+    margin-left: 5px;
 }
 #header-global:before {
     content: "";
@@ -162,7 +172,7 @@ body {
   background: white;
   display: inline;
   float: left;
-  margin: 0 23% 20%;
+  margin: 0 10% 20%;
   padding: 10px 10px 40px;
   text-align: center;
   text-decoration: none;
